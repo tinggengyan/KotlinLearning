@@ -21,6 +21,12 @@ fun MyClass.Companion.foo() {
 }
 
 
+val MyClass.index: Int
+    get() {
+        return 1
+    }
+
+
 fun main(args: Array<String>) {
 //    val l = mutableListOf(1, 2, 3)
 //    l.swap(0, 2)
@@ -28,5 +34,7 @@ fun main(args: Array<String>) {
 
     var my = MyClass()
     MyClass.foo()
+
+    println(my.index)
 
 }
