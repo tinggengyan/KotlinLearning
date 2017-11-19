@@ -32,8 +32,36 @@ fun sum_3(a: Int, b: Int) {
     println("sum of $a and $b is ${a + b}")
 }
 
+fun <T> asList(vararg ts: T): List<T> {
+
+    val result = ArrayList<T>()
+    for (t in ts) {
+        result.add(t)
+    }
+    return result
+}
+
+infix fun Int.sh1(x: Int): Int {
+    return x + x
+}
 
 fun main(args: Array<String>) {
-    println(sum(1, 2))
-    sum_3(3, 4)
+
+//    println(sum(1, 2))
+//    sum_3(3, 4)
+
+    // 可变数量参数
+//    val a = arrayOf(1, 2, 3)
+//    val list = asList(*a, 4, 5, 6, 7, 8, 9)
+//    for (i in list) {
+//        println(i)
+//    }
+
+    //中缀表示法
+    //他们是成员函数或扩展函数； 他们只有一个参数； 他们用 infix 关键字标注。
+
+    println(5.sh1(9))
+    println(5 sh1 9)
+
+
 }
