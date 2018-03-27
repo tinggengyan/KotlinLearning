@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
         println(x)
     }
 
-    for (x in 9 downTo 0 step 3){
+    for (x in 9 downTo 0 step 3) {
         println(x)
     }
 

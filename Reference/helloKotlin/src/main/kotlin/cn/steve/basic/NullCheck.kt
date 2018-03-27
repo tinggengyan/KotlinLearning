@@ -35,7 +35,7 @@ fun main(args: Array<String>) {
 
     val files = File("hello").listFiles()
 
-    println(files?.size?:"长度为null")
+    println(files?.size ?: "长度为null")
 
     println(files ?: "empty")
 

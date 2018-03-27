@@ -27,7 +27,7 @@ fun getResult(): Result {
 fun main(args: Array<String>) {
     val des = Destructuring()
     // 对于不使用的解析参数,可以使用下划线代替
-    val (_, _,b) = des
+    val (_, _, b) = des
     println("b" + b)
 
 

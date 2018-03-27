@@ -15,8 +15,6 @@ class Address {
     lateinit var lateInitValue: String
 
 
-
-
     var allByDefault: Int?
         get() {
             return age + 10
